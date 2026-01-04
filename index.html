@@ -1,147 +1,1041 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="googlec09882c8493d4a55">
-
-  <title>Aravind CCTV Camera Service</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background-color: darkblue; color: white; padding: 15px 30px; text-align: center; position: relative; }
-    header h1 { margin: 0; font-size: 22px; }
-    .hamburger {
-      font-size: 26px; cursor: pointer; position: absolute; left: 20px; top: 15px;
-    }
-    nav {
-      display: none; flex-direction: column; background: #333;
-      position: absolute; top: 60px; left: 10px; border-radius: 10px; padding: 10px;
-    }
-    nav a { color: white; text-decoration: none; margin: 10px 0; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 20px; text-align: center; }
-    .service-box { display: inline-block; width: 250px; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; vertical-align: top; }
-    .service-box img { width: 100%; height: 150px; border-radius: 10px; margin-bottom: 10px; }
-    footer { background-color: #222; color: white; text-align: center; padding: 15px; margin-top: 30px; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCTV Security Systems</title>
 </head>
 <body>
-  <header>
-    <span class="hamburger" onclick="toggleMenu()">☰</span>
-    <h1>Aravind CCTV Camera Service</h1>
-    <nav id="menu">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    background:black;
+    color:black ;
+}
 
-  <section id="home">
-    <h2>Welcome to Aravind CCTV Camera Service</h2>
-    <p>"Secure your world with Aravind CCTV — trusted experts in installation, repair, and maintenance, ensuring safety for your home and business 24/7."</p>
-  </section>
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: blue;
+}
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <img src="installation.webp" alt="Installation">
-      <h3>Installation</h3>
-      <p>Professional CCTV camera setup for home and office.</p>
-    </div>
-    <div class="service-box">
-      <img src="repair.webp" alt="Repair">
-      <h3>Repair</h3>
-      <p>Quick and reliable camera repairs and troubleshooting.</p>
-    </div>
-    <div class="service-box">
-      <img src="CCTV-Maintenance-Services.jpg" alt="Maintenance">
-      <h3>Maintenance</h3>
-      <p>Regular checkups to ensure your cameras work perfectly.</p>
-    </div>
-  </section>
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
 
- <section id="about">
-  <h2>About Us</h2>
-  <p>
-    At <strong>Aravind CCTV Camera Service</strong>, your safety is our promise. 
-    With hands-on expertise in installation, repair, and maintenance, 
-    we deliver security solutions you can trust. 
-  </p>
+/* Navigation */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#00aaff
+nav a:hover {
+    color:dark blue;
+}
 
-  <p>
-    More than just fixing cameras, we provide peace of mind. 
-    Every project we take is backed by reliability, quick support, 
-    and the latest technology to keep you secure.
-  </p>
+/* Hero */
+.hero {
+    height: 20vh;
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
 
-  <h3 style="margin-top:15px; font-style:italic; color:#555;">
-    “Your Security, Our Responsibility”
-  </h3>
-</section>
-  <section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Booking / Phone:</strong> <a href="tel:9345580152">9345580152</a></p>
-  
-  <p>
-    <strong>Instagram:</strong> 
-    <section id="instagram-profile" style="text-align:center; margin:30px 0;">
-  <div style="display:inline-block; padding:20px; border:1px solid #ddd; border-radius:15px; max-width:400px; background:#fff; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-    
-    <!-- Profile Image -->
-    <img src="image dp.jpg" alt="aravind_cctv_1" 
-         style="width:100px; height:100px; border-radius:50%; border:2px solid #ddd;">
-    
-    <!-- Username -->
-    <h2 style="margin:10px 0 5px 0; font-size:20px;">@aravind_cctv_1</h2>
-    <p style="color:gray; font-size:14px; margin:0;">CCTV Camera</p>
-    
-    <!-- Stats -->
-    <p style="margin:10px 0; font-size:14px;">
-      <strong>6</strong> posts &nbsp;&nbsp; 
-      <strong>15</strong> followers &nbsp;&nbsp; 
-      <strong>13</strong> following
-    </p>
+.hero h1 {
+    font-size: 48px;
+}
 
-    <!-- Bio -->
-    <p style="font-size:14px; margin:10px 0; color:#333;">
-      "Smart security for smart people – secure your space today!" <br>
-      🔒 CCTV Installation & Service <br>
-      🏠 Home | 🏢 Office | 🏬 Shop <br>
-      📍 Coimbatore | 📞 9345580152
-    </p>
+.btn {
+    padding: 12px 25px;
+    background: #00aaff;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    <!-- Follow Button -->
-    <a href="https://www.instagram.com/aravind_cctv_1" target="_blank"
-       style="display:inline-block; padding:10px 20px; background:#3897f0; color:#fff; text-decoration:none; border-radius:8px; font-weight:bold;">
-      View Profile
-    </a>
-  </div>
-</section>
-</p>
+.btn:hover {
+    background: #F74F69;
+}
 
-  <p><strong>Our Location:</strong></p>
- <iframe
-    src="https://www.google.com/maps?q=32%2C+Kattabomman+St%2C+Ganapathy%2C+Coimbatore,+Tamil+Nadu+641006&output=embed"
-    width="100%" height="300" style="border:0; border-radius:8px;"
-    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  </iframe></section>
+/* --- NEW PRODUCT SECTION (from your screenshot) --- */
+.products {
+    padding: 60px 20px;
+    background: #99191B;
+}
 
-  <footer>
-    &copy; 2025 Aravind CCTV Camera Service. All rights reserved.
-  </footer>
+.products h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById("menu");
-      if (menu.style.display === "flex") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "flex";
-      }
+.title-red {
+    color: black;
+}
+
+/* Product Cards */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-card {
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: #0056D2;
+    margin-top: 15px;
+}
+
+.product-card p {
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.learn-btn {
+    padding: 10px 20px;
+    background: #E63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background: #c92f3c;
+}
+
+/*Alert sytem*/
+/* ALERT SECTION */
+.alerts {
+    padding: 60px 20px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.alerts h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #00ffff;
+}
+
+.alert-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.alert-card {
+    width: 220px;
+    background: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.alert-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.alert-card h3 {
+    padding: 10px;
+    color: #00ffff;
+    font-size: 18px;
+}
+
+.alert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+
+/* ALERT POPUP */
+.alert-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.alert-popup-content {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.alert-popup-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.close-alert {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+   
+      
+        
+
+/* POPUP DESIGN */
+.popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.popup-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.about {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-box p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-features {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    font-size: 17px;
+}
+
+.about-features div {
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.about-card {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.about-img {
+    width: 350px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.about-details {
+    flex: 1;
+    padding-top: 20px;
+}
+/* UNIQUE GALLERY */
+.gallery-unique {
+    padding: 60px 20px;
+    background: #111;
+    text-align: center;
+}
+
+.gallery-unique h2 {
+    color: #00aaff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.gallery-sub {
+    color: #ccc;
+    margin-bottom: 35px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.15);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* POPUP */
+.gallery-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.gallery-popup img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+/* New Contact Box Style */
+.contact {
+    padding: 50px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.contact-box {
+    background: #222;
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.contact-box p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.contact-box a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    color: #F74F69;
+}
+/* PAYMENT SECTION */
+
+
+.payment {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    text-align: center;
+}
+
+.payment h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #00ffff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.payment-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.payment-card {
+    background: #1e1b4b;
+    border-radius: 20px;
+    width: 300px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.8);
+}
+
+.payment-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.payment-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+
+.payment-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.payment-number {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-number button {
+    background: #00ffff;
+    color: #1e1b4b;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.payment-number button:hover {
+    background: #00b8cc;
+    color: #fff;
+}
+
+.payment-qr {
+    width: 180px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 2px solid #00ffff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.payment-qr:hover {
+    transform: scale(1.1);
+}
+
+.scan-text {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .payment-cards-container {
+        flex-direction: column;
+        align-items: center;
     }
-  </script>
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        width: 95%;
+    }
+.insta-card {
+    width: 320px;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.insta-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+}
+
+.insta-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+}
+#form-status {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .contact input, .contact textarea { width: 90%; }
+}
+</style>
+
+
+<!-- Header -->
+<header>
+    <div class="logo">Cctv Trusty Secure</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+<a href="#payment">Payment</a>
+
+
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <h1>AD SECURE SOLUTION</h1>
+    <p>24/7 Protection for Home & Business</p>
+    <button class="btn" id="exploreBtn">Explore Products</button>
+</section>
+
+
+<!-- NEW PRODUCT SECTION (Like in your screenshot) -->
+<section id="products" class="products">
+    <h2>Live in the <span class="title-red">Future</span></h2>
+
+    <div class="product-container">
+
+        <!-- CCTV CAMERAS -->
+        <div class="product-card">
+            <img src="installation.webp">
+            <h3>CCTV CAMERAS</h3>
+            <p>
+                Our CCTV Cameras offer reliable, HD surveillance for both homes and businesses.
+                Features include motion detection, night vision, and remote access.
+            </p>
+            <button class="learn-btn">Learn more</button>
+        </div>
+
+        <!-- ATTENDANCE -->
+        <div class="product-card">
+            <img src="ATTENDANCE.jpg">
+            <h3>ATTENDANCE</h3>
+            <p>
+                Manage workforce attendance using fingerprint and facial recognition systems.
+                Reduce errors and gain real-time tracking insights.
+            </p>
+            <button class="learn-btn">Learn more</button>
+        </div>
+
+        <!-- SECURITY SYSTEMS -->
+        <div class="product-card">
+            <img src="SECURITY SYSTEMS.jpg">
+            <h3>SECURITY SYSTEMS</h3>
+            <p>
+                Stay safe with CCTV, alarm, and access-control systems.
+                Get 24/7 monitoring and complete remote protection.
+            </p>
+            <button class="learn-btn">Learn more</button>
+       
+
+    </div>
+        <!-- Existing Solar Products -->
+        <div class="product-card">
+            <img src=solar.jpg alt="Solar Panel">
+            <h3>Solar Panel Installation</h3>
+            <p>High-efficiency rooftop solar panels.</p>
+<button class="learn-btn">Learn more</button>
+
+        </div>
+
+              <!-- ⭐ NEW: Video Door Camera -->
+        <div class="product-card">
+            <img src="Video Door Camera.jpg" >
+             <h3>Video Door Camera</h3>
+            <p>HD door camera with two-way communication.</p>
+<button class="learn-btn">Learn more</button>
+
+        </div>
+
+        <!-- ⭐ NEW: Home Automation -->
+        <div class="product-card">
+            <img src="Home Automation System.jpg" >
+            <h3>Home Automation System</h3>
+            <p>Smart controls for lights, doors & appliances.</p>
+<button class="learn-btn">Learn more</button>
+
+        </div>
+<!-- PRODUCT POPUP BOX -->
+<div id="productPopup" class="popup">
+    <div class="popup-content">
+        <span id="closePopup" class="close-btn">&times;</span>
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" src="" alt="">
+        <p id="popupDescription"></p>
+    </div>
+</div>
+
+
+    </section>
+
+<!--alert sysytem -->
+<!-- ALERT SYSTEM SECTION -->
+<section id="alerts" class="alerts">
+    <h2>Live Camera Alerts</h2>
+
+    <div class="alert-container">
+        <div class="alert-card" onclick="openAlert('C-Mount Camera', 'D:\\cctv\\c-mount-camera.jpg')">
+            <img src="D:\cctv\c-mount-camera.jpg" alt="C-Mount Camera">
+            <h3>C-Mount Camera</h3>
+        </div>
+
+        <div class="alert-card" onclick="openAlert('Day/Night Camera', 'D:\\cctv\\day-night-camera.jpg')">
+            <img src="D:\cctv\day-night-camera.jpg" alt="Day/Night Camera">
+            <h3>Day/Night Camera</h3>
+        </div>
+
+        <div class="alert-card" onclick="openAlert('PTZ Camera', 'D:\\cctv\\ptz-camera.jpg')">
+            <img src="D:\cctv\ptz-camera.jpg" alt="PTZ Camera">
+            <h3>PTZ Camera</h3>
+        </div>
+
+        <div class="alert-card" onclick="openAlert('Turret Camera', 'D:\\cctv\\turret-camera.jpg')">
+            <img src="D:\cctv\turret-camera.jpg" alt="Turret Camera">
+            <h3>Turret Camera</h3>
+        </div>
+
+        <div class="alert-card" onclick="openAlert('IP Camera', 'D:\\cctv\\ip-camera.jpg')">
+            <img src="D:\cctv\ip-camera.jpg" alt="IP Camera">
+            <h3>IP Camera</h3>
+        </div>
+    </div>
+</section>
+
+<!-- ALERT POPUP -->
+<div id="alertPopup" class="alert-popup">
+    <div class="alert-popup-content">
+        <span class="close-alert" onclick="closeAlert()">&times;</span>
+        <h2 id="alertTitle"></h2>
+        <img id="alertImage" src="" alt="Alert Image">
+        <p>Motion detected or camera alert!</p>
+    </div>
+</div>
+
+
+
+
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About AD Secure Solution</h2>
+
+    <div class="about-box">
+        <p>
+            At <strong>AD Secure Solution</strong>, we believe security is not just a service —  
+            it is a responsibility. With years of expertise in CCTV installation, home automation,  
+            solar security systems, and smart surveillance, we deliver technology that protects  
+            families, businesses, and properties 24/7.
+        </p>
+
+        <p>
+            From small homes to large commercial spaces, our team provides  
+            <strong>professional installation, trusted support, and high-quality products</strong>  
+            to ensure you stay safe at all times.
+        </p>
+
+        <div class="about-features">
+            <div>🔒 100% Trusted Security Services</div>
+            <div>📡 Smart CCTV & Solar Cameras</div>
+            <div>🏠 Home • 🏢 Office • 🛍️ Shops</div>
+            <div>🤝 Affordable & Reliable Support</div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>Who We Are</h2>
+
+    <div class="about-card">
+        <img src="installation.webp" class="about-img">
+
+        <div class="about-details">
+            <h3>We Secure What Matters</h3>
+            <p>
+                We specialize in advanced CCTV installation, smart home automation,  
+                video door security, and solar-powered surveillance.  
+            </p>
+            <p>
+                Our goal is simple —  
+                <strong>Provide top-quality protection with zero compromise.</strong>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- UNIQUE GALLERY SECTION -->
+<section id="gallery" class="gallery-unique">
+    <h2>Our Installation Gallery</h2>
+    <p class="gallery-sub">Real project images from AD Secure Solution</p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="g1.jpg">
+            <div class="overlay">
+                <span>CCTV Installation</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="g2.jpg">
+            <div class="overlay">
+                <span>Office Security</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="g3.jpg">
+            <div class="overlay">
+                <span>Home Camera</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="g4.jpg">
+            <div class="overlay">
+                <span>Solar Camera</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="g5.jpg">
+            <div class="overlay">
+                <span>Warehouse Setup</span>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openGallery(this)">
+            <img src="solar.jpg">
+            <div class="overlay">
+                <span>Solar Panel System</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- IMAGE POPUP -->
+<div id="galleryPopup" class="gallery-popup">
+    <span class="close-popup" onclick="closeGallery()">&times;</span>
+    <img id="popupImg">
+</div>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <p><strong>📞 Phone:</strong> <a href="tel:+919345580152">+91 9345580152</a></p>
+
+        <p><strong>📸 Instagram:</strong></p>
+<a href="https://www.instagram.com/aravind_cctv_1" target="_blank" class="insta-link">
+    <img src="D:\cctv\ins.jpg" class="insta-card" alt="Instagram Card">
+</a>
+        </p>
+
+        <p><strong>📧 Email:</strong>
+            aravinthk508@gmail.com        </p>
+
+        <p><strong>📍 Location:</strong></p>
+
+        <!-- Google Map -->
+        <iframe
+            src="https://www.google.com/maps?q=32%2C+Kattabomman+St%2C+Ganapathy%2C+Coimbatore,+Tamil+Nadu+641006&output=embed"
+            width="100%" height="300" style="border:0; border-radius:8px;">
+        </iframe>
+
+    </div>
+        
+     <!-- UNIQUE PAYMENT SECTION -->
+<section id="payment" class="payment">
+    <h2>Secure Payment Options</h2>
+
+    <div class="payment-cards-container">
+
+        <!-- PhonePe Card -->
+        <div class="payment-card">
+            <div class="payment-icon">📱</div>
+            <h3>PhonePe</h3>
+            <p>Pay securely using PhonePe.</p>
+            <div class="payment-number">
+                9345580152 
+                <button onclick="copyPhonePe()">Copy</button>
+            </div>
+            <img src="googlepay-qr.jpeg" alt="PhonePe QR" class="payment-qr">
+        </div>
+
+        <!-- Google Pay Card -->
+        <div class="payment-card">
+            <div class="payment-icon">💳</div>
+            <h3>Google Pay</h3>
+            <p>Instant payments via Google Pay.</p>
+            <div class="payment-number">
+                9345580152 
+                <button onclick="copyGPay()">Copy</button>
+            </div>
+            <img src="googlepay-qr.jpeg" alt="Google Pay QR" class="payment-qr">
+        </div>
+
+    </div>
+
+    <p class="scan-text">Scan QR codes to pay with any UPI app</p>
+</section></section>
+
+
+
+
+<script>
+// PRODUCT POPUP FUNCTION
+document.querySelectorAll(".learn-btn").forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+        
+        const products = [
+            {
+                title: "CCTV Cameras",
+                img: "installation.webp",
+                desc: "High-definition CCTV cameras with night vision, motion detection, remote viewing & mobile alerts."
+            },
+            {
+                title: "Attendance System",
+                img: "ATTENDANCE.jpg",
+                desc: "Biometric fingerprint & face recognition attendance system for schools, offices & industries."
+            },
+            {
+                title: "Security Systems",
+                img: "SECURITY SYSTEMS.jpg",
+                desc: "Complete home & office security systems including alarms, sensors & access control."
+            },
+            {
+                title: "Solar Camera",
+                img: "solar.jpg",
+                desc: "Dual lens solar powered smart camera with 24/7 charging, PTZ control & mobile view."
+            },
+            {
+                title: "Video Door Camera",
+                img: "Video Door Camera.jpg",
+                desc: "Smart door camera with two-way audio, night vision & visitor recording."
+            },
+            {
+                title: "Home Automation",
+                img: "Home Automation System.jpg",
+                desc: "Smart lighting, door lock control, appliance automation & voice assistant integration."
+            }
+        ];
+
+       document.getElementById("popupTitle").innerText = products[index].title;
+        document.getElementById("popupImage").src = products[index].img;
+        document.getElementById("popupDescription").innerText = products[index].desc;
+
+        document.getElementById("productPopup").style.display = "flex";
+    });
+});
+
+// CLOSE POPUP
+document.getElementById("closePopup").onclick = function() {
+    document.getElementById("productPopup").style.display = "none";
+};
+</script>
+
+
+//alert system
+  // OPEN ALERT POPUP
+function openAlert(title, imgSrc) {
+    document.getElementById("alertTitle").innerText = title;
+    document.getElementById("alertImage").src = imgSrc;
+    document.getElementById("alertPopup").style.display = "flex";
+}
+
+// CLOSE ALERT POPUP
+function closeAlert() {
+    document.getElementById("alertPopup").style.display = "none";
+}
+
+   
+//Gallery
+<script>
+function openGallery(element) {
+    const imgSrc = element.querySelector("img").src;
+    document.getElementById("popupImg").src = imgSrc;
+    document.getElementById("galleryPopup").style.display = "flex";
+}
+
+
+function closeGallery() {
+    document.getElementById("galleryPopup").style.display = "none";
+}
+
+// Contact Form Message
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("form-status").innerText = "Message sent successfully!";
+    document.getElementById("form-status").style.color = "#00ff88";
+    this.reset();
+});
+
+// Highlight payment numbers on click
+document.querySelectorAll(".payment-box p").forEach(item => {
+    item.addEventListener("click", () => {
+        item.style.background = "#e8f5e9";
+        item.style.padding = "5px";
+    });
+});
+
+// Copy PhonePe number
+function copyPhonePe() {
+    navigator.clipboard.writeText("9345580152")
+        .then(() => alert("PhonePe number copied!"))
+        .catch(err => console.error("Failed to copy: ", err));
+}
+
+// Copy Google Pay number
+function copyGPay() {
+    navigator.clipboard.writeText("8148240152")
+        .then(() => alert("Google Pay number copied!"))
+        .catch(err => console.error("Failed to copy: ", err));
+}
+
+// QR code click → show alert
+document.querySelectorAll(".payment-qr").forEach(qr => {
+    qr.addEventListener("click", () => {
+        alert("Scan this QR code using any UPI app (PhonePe, Google Pay, Paytm, etc.)");
+    });
+});
+
+// Optional: highlight number when clicked
+document.querySelectorAll(".payment-number").forEach(item => {
+    item.addEventListener("click", () => {
+        item.style.background = "#00ffff33";
+        item.style.padding = "5px 10px";
+        item.style.borderRadius = "8px";
+    });
+});
+// Explore Products → Open Image
+document.getElementById("exploreBtn").addEventListener("click", function() {
+    window.open("images/images.png", "_blank");
+});
+</script>
+
 </body>
 </html>
-
-
